@@ -5,8 +5,7 @@ Techf5ve2018后端小组任务提交仓库
 
 ```
 project
-│   README.md
-│   file001.txt    
+│   README.md    
 │
 └───task01
 |   |
