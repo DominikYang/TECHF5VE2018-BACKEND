@@ -1,9 +1,11 @@
-
-package team.employee.member;
-
+﻿
+package Staff.member;
 /**
- * @author 成冬樊
  *
+ * @author chengdongfan;
+ * @version V1.0
+ * @date 2018/10/24
+ * @since 1.8
  */
 public class Member {
 

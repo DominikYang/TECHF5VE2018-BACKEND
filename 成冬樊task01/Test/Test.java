@@ -1,13 +1,16 @@
-package team.employee.test;
+package Test;
 import java.util.Scanner;
-import team.employee.member.*;
-import team.employee.ceo.*;
-import team.employee.charge.*;
-import team.employee.commonemployee.*;
-import team.employee.manager.*;
+import Staff.member.*;
+import Staff.generalmanager.*;
+import Staff.charge.*;
+import Staff.commonemployee.*;
+import Staff.manager.*;
 /**
- * @author 成冬樊
  *
+ * @author chengdongfan;
+ * @version V1.0
+ * @date 2018/10/24
+ * @since 1.8
  */
 public class Test{
 
@@ -40,7 +43,6 @@ public class Test{
         String birthday = sc.next();
         System.out.print("请输入员工工资：");
         double salary = sc.nextDouble();
-
         //根据员工的职务不同，分为不同的类
         if(position.equals("员工")) {
             em = new CommonEmployee();
@@ -49,7 +51,7 @@ public class Test{
         } else if(position.equals("经理")) {
             em = new Manager();
         } else if(position.equals("总监")) {
-            em = new CEO();
+            em = new GeneralManager();
         } else {
             System.out.println("输入不正确！");
         }
