@@ -1,6 +1,5 @@
-﻿package Staff.generalmanager;
-
-import Staff.member.Member;
+﻿package Validate.commonemployee;
+import entity.Member;
 
 import java.util.Scanner;
 /**
@@ -10,12 +9,12 @@ import java.util.Scanner;
  * @date 2018/10/24
  * @since 1.8
  */
-public class GeneralManager extends Member {
+public class CommonEmployee extends Member{
     Scanner inputData = new Scanner(System.in);
 
     //工资范围
     public void setSalary(double salary) {
-        if (salary > 15000 && salary < 20000) {
+        if (salary > 4000 && salary < 6000) {
             super.setSalary(salary);
         } else {
             System.out.println("输入薪水有误,请重新输入薪水:");
@@ -25,3 +24,6 @@ public class GeneralManager extends Member {
 
     }
 }
+
+
+

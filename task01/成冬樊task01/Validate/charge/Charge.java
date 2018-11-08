@@ -1,6 +1,6 @@
-﻿package Staff.charge;
+package Validate.charge;
 import java.util.Scanner;
-import Staff.member.Member;
+import entity.Member;
 /**
  *
  * @author chengdongfan;
