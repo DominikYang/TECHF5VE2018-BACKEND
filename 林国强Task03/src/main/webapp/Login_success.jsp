@@ -34,8 +34,7 @@ To change this template use File | Settings | File Templates.
 <div class="jumbotron" align="center">
   <div class="container container-small">
       <h1>Hello!</h1>
-      <p>输入的用户名：<%=request.getParameter("userName")%></p>    <br>
-      <p>输入的密码:<%=request.getParameter("password")%></p>       <br>
+      <h2>亲爱的<%=request.getParameter("userName")%>欢迎您！</h2>    <br>
   </div>
 </div>
 </body>
