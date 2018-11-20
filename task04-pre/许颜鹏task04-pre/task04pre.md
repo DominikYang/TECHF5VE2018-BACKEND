@@ -70,39 +70,39 @@ public class arrydemo {
 答：
 
 
-#### 重载：
+### 重载：
 
 
 重载是指方法名相同，但方法所需参数不同，根据方法获得的不同参数，同名方法就可以做出相应的处理，是一种多态的表现形式。
 
 
-#### 重写：
+### 重写：
 
 
 而重写是指子类对父类方法内部实现的重新定义，但是前提是方法的返回值和参数列表不能改变，子类可以根据需要，重写父类的方法。
 
 
-#### ==：
+### ==：
 
 
 基本数据类型(注意:不包含String)使用 == 时，比较的是他们的值。
 而类使用 == 时，比较的是地址。
 
 
-#### equals()：
+### equals()：
 
 
 equals()本是Object类中的方法，用于比较是否有相同地址，但有些子类对其进行了重写，例如String，String的equals()方法用于比较内容是否相同，而非地址
 。
 
 
-#### StringBuffer：
+### StringBuffer：
 
 
 StringBuffer中方法可以带有synchronized关键字，可以保证线程安全，但是效率慢。
 
 
-#### StringBuilder:
+### StringBuilder:
 
 
 StringBuilder的方法则没有synchronized该关键字，所以不能保证线程安全，但是效率快。
