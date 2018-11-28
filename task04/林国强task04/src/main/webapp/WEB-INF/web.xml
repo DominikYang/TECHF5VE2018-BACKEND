@@ -1,0 +1,46 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+
+  <filter>
+    <filter-name>LoginFilter</filter-name>
+    <filter-class>filter.LoginFilter</filter-class>
+    <init-param>
+      <param-name>noLoginPaths</param-name>
+      <param-value>index.jsp;LoginServlet</param-value>
+    </init-param>
+    <!-- 设置UTF-8格式编码-->
+    <init-param>
+      <param-name>charset</param-name>
+      <param-value>UTF-8</param-value>
+    </init-param>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>LoginFilter</filter-name>
+    <url-pattern>/Login_success.jsp</url-pattern>
+  </filter-mapping>
+
+  <servlet>
+    <servlet-name>AjaxLoginServlet</servlet-name>
+    <servlet-class>action.AjaxLoginServlet</servlet-class>
+  </servlet>
+
+
+
+  <servlet-mapping>
+    <servlet-name>AjaxLoginServlet</servlet-name>
+    <url-pattern>/action/AjaxLoginServlet</url-pattern>
+  </servlet-mapping>
+
+
+<!--设置404错误-->
+  <error-page>
+    <error-code>404</error-code>
+    <location>/error.jsp</location>
+  </error-page>
+
+</web-app>
