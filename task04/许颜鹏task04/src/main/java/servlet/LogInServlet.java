@@ -19,11 +19,6 @@ public class LogInServlet extends HttpServlet {
     @Override
     protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //服务器指定请求编码
-        request.setCharacterEncoding("utf-8");
-        //设置服务器响应编码
-        response.setCharacterEncoding("utf-8");
-        //设置响应头，告诉浏览器用什么方式去解码
-        response.setContentType("text/html;charset=utf-8");
         String userName=request.getParameter("userName");
         String password=request.getParameter("password");
         IUserService userService=new UserServiceImpl();
